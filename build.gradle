@@ -13,8 +13,8 @@ apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 
 bootJar {
-    baseName = 'hello-rest'
-    version =  '0.1.0'
+    baseName = 'spring_tut'
+    version =  '0.1.1'
 }
 
 repositories {
@@ -26,5 +26,7 @@ targetCompatibility = 1.8
 
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")
-    testCompile('org.springframework.boot:spring-boot-starter-test')
+    compile("org.springframework.boot:spring-boot-starter-actuator")
+    testCompile('junit:junit')
+    testCompile("org.springframework.boot:spring-boot-starter-test")
 }

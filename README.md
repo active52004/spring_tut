@@ -11,3 +11,7 @@
 ## run the jar
 * built-with-gradle: run ```java -jar build/libs/hello-rest-0.1.0.jar```
 * built-with-maven: run ```java -jar target/hello-rest-0.1.0.jar```
+
+## config IntelliJ to recognize Spring in the repo
+* goto File->Project Structure->modules
+* add Spring if not exist, IntelliJ will install spring libs to lib/
